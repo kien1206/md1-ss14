@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function timPhanTuDaiNhat(arr) {
+        if (arr.length === 0) {
+            return "Mảng rỗng.";
+        }
+
+        var maxLength = arr[0].length;
+        var longestElement = arr[0];
+
+        for (var i = 1; i < arr.length; i++) {
+            if (arr[i].length > maxLength) {
+                maxLength = arr[i].length;
+                longestElement = arr[i];
+            }
+        }
+
+        return longestElement;
+    }
+    var mangChuoi = ["apple", "banana", "cherry", "dưa hấu", "củ chuối"];
+    var ketQua = timPhanTuDaiNhat(mangChuoi);
+    console.log("Phần tử có độ dài lớn nhất trong mảng là: " + ketQua);
+
+    </script>
+</body>
+</html>

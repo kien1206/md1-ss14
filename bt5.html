@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function timChuoiTrongMang(arr, chuoi) {
+        var ketQua = [];
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i].includes(chuoi)) {
+                ketQua.push(arr[i]);
+            }
+        }
+        return ketQua;
+    }
+    var mangChuoi = ["apple", "a", "c", "b", "s", "g", "p"];
+    var chuoiNhap = prompt("Nhập vào một chuỗi bất kỳ:");
+    var ketQua = timChuoiTrongMang(mangChuoi, chuoiNhap);
+    console.log("Các phần tử trong mảng có chứa chuỗi '" + chuoiNhap + "' là: " + ketQua);
+    </script>
+</body>
+</html>

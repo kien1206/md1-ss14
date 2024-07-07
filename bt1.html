@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function kiemTraChanLe(so) {
+        if (so % 2 === 0) {
+            return so + " là số chẵn.";
+        } else {
+            return so + " là số lẻ.";
+        }
+    }
+    var so1 = parseInt(prompt("Nhập số thứ nhất:"));
+    var so2 = parseInt(prompt("Nhập số thứ hai:"));
+    var so3 = parseInt(prompt("Nhập số thứ ba:"));
+    console.log(kiemTraChanLe(so1));
+    console.log(kiemTraChanLe(so2));
+    console.log(kiemTraChanLe(so3));
+    </script>
+</body>
+</html>
